@@ -1,75 +1,349 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+	<title>Khoá hune</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="text/css" href="img/logo-hune.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
+	<header class="row">
+		<div class="item-top">
+			<img src="img/logo-hune.png" width="125px" >
+		</div>
+		<div class="item-top-search">
+			<form >
+                <input type="text" placeholder="search here...." id="txtSearch" name="search">
+                <input type="button" value="Go" id="btnSearch">
+            </form>
+		</div>
     </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
+    
+	<nav class="menuTop">
+		<ul>
+			<li  class="active"><a href="#">Trang Chủ</a></li>
+			<li class="usb"><a href="#">Giới Thiệu</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Giới thiệu hune</a></li>
+						<li><a href="#">Tầm nhìn và chiến lược</a></li>
+						<li><a href="#">Câu chuyện thành công</a></li>
+						<li><a href="#">hune Vietnam team</a></li>
+						<li><a href="#">Tin tức</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a  href="#">Sản Phẩm</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Khoá khách sạn</a></li>
+						<li><a href="#">Khoá tử cabinet</a></li>
+						<li><a href="#">Khoá cho văn phòng/cắn hộ</a></li>
+						<li><a href="#">Công tắc tiết kiểm điện</a></li>
+						<li><a href="#">Intelligent Safe Lock</a></li>
+						<li><a href="#">New Concept Look</a></li>
+						<li><a href="#">Sản Phẩm mới</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a href="#">Giải Pháp</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Giải pháp cho khách sạn</a></li>
+						<li><a href="#">Giải pháp cho văn phòng/căn hộ</a></li>
+						<li><a href="#">Giải pháp khoá tủ đồ cabinet</a></li>
+						<li><a href="#">Giải pháp tiết kiệm năng lượng</a></li>
+						<li><a href="#">Giải pháp AutoID</a></li>
+						<li><a href="#">Giải pháp quản lý nhân sự</a></li>
+						<li><a href="#">Giải pháp an ninh</a></li>
+						<li><a href="#">Giải pháp ẩn AutoID</a></li>
+						
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a href="#">Dịch vụ & Hỗ trợ</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Driver & Catalogue</a></li>
+						<li><a href="#">Hỏi đáp sản phẩm Hune</a></li>
+						<li><a href="#">Chính sách bảo hành</a></li>
+						<li><a href="#">Yêu cầu hỗ trợ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a href="#">Đại Lý</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Chính sách đại lý</a></li>
+						<li><a href="#">Danh sách đại lý</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a href="#">Tư Vấn</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Địa điểm bảo hành</a></li>
+						<li><a href="#">Đánh giá sản phẩm</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="usb"><a href="#">Liên Hệ</a></li>
+		</ul>
     </nav>
+    
+	<main class="container">
+		<aside class="row">
+			<div class="col-sm-2">
+				<h3 class="title-menu"><i class="fa fa-bars"></i>Danh mục sản phẩm</h3>
+				<ul>
+					<li><a href="#">Khoá khách sạn</a></li>
+					<li><a href="#">Khoá tủ cabinet</a></li>
+					<li><a href="#">Khoá căn phòng, căn hộ</a></li>
+					<li><a href="#">Công tắc tiết kiệm điện</a></li>
+					<li><a href="#">Intelligent Safe Box</a></li>
+					<li><a href="#">New Concept Lock</a></li>
+				</ul>
+			</div>
+			<div class="slide">
+				<img src="img/slide1.jpg" height="374">
+			</div>
+		</aside>
+		
+		<div class="body">
+			<div class="newAndContact">
+				<div class="LienHe">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="#"><img class="img1" alt="feature1" src="./img/feature1.png" height="58px" width="58px"></a>
+							<div class="line-left" style="padding-left: 70px;">
+								<span class="feature-title"> Hỗ trợ trực tuyến </span>
+								<p> 0392387889</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<a href="#"><img loading="lazy" class="img2" alt="feature1" src="./img/feature2.png" height="58px" width="58px"></a>
+							<div class="line-left" style="padding-left: 70px;">
+								<span class="feature-title"> Vận chuyển miễn phí</span>
+								<p> Miễn phí vận chuyển trong 20km</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<a href="#"><img class="img3" alt="feature1" src="./img/feature3.png" height="58px" width="58px"></a>
+							<div class="line-left" style="padding-left: 70px;">
+								<span class="feature-title"> Đổi trả trong ngày</span>
+								<p>Dễ dàng đổi trả hàng trong ngày </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="tinTuc">
+					<h3>Tin Tức</h3>
+					<div class="blog-item-img">
+						<img src="img/nhung-linh-vuc-va-nganh-cong-nghiep-co-the-su-dung-khoa-thong-minh.png" width="250px">
+					</div>
+					<a href="#">Những lĩnh vực và ngành công nghiệp có thể sử dụng khóa thông minh?</a>
+					<p>
+						Trong những năm gần đây, ngành công nghiệp nhà thông minh và AI đã phát triển nhanh chóng. Khóa thông minh là sản phẩm cấp
+					</p>
+					<ul class="noiDung">
+						<li>
+							<a href="#">
+								<i class="fa fa-caret-right"></i>
+								Hune Viet Nam - Thương hiệu uy tín, Sản Phẩm chất lượng
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-caret-right"></i>
+								Tuyển dụng nhân viên văn phòng
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-caret-right"></i>
+								Hune Việt Nam - Nhà cung cấp khoá khách sạn giá rẻ toàn quốc
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-caret-right"></i>
+								Khoá tủ đồ cabinet dành cho spa, bể bơi
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="product">
+				<div class="khoaKhachSan">
+					<div class="titleName">
+						<h3> KHOÁ KHÁCH SẠN</h3>
+						<a href="#">Xem Thêm</a>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/img1.jpg"></p>
+						<p><a href="#">KHÓA THẺ TỪ KHÁCH SẠN HUNE 930SS-6-D</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/img2.jpg"></p>
+						<p><a href="#">Khoá Khách sạn Hune 918SLL-3-D</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/img3.jpg"></p>
+						<p><a href="#">Khoá Khách Sạn Hune 918SLP-2-D</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/img4.jpg"></p>
+						<p><a href="#">Khoá Khách Sạn Cao Cấp Hune 029SS-5-D</a></p>
+					</div>
+				</div>
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
+				<div class="Cabinet">
+					<div class="titleName">
+						<h3> KHOÁ TỦ CABINET</h3>
+						<a href="#">Xem Thêm</a>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/cabinet1.jpg"></p>
+						<p><a href="#">Khoá Tủ Hune Cabinet 18R01Sl</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/cabinet2.jpg"></p>
+						<p><a href="#">Khoá Tủ Đồ Hune Cabinet 18R01BP</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/3.jpg"></p>
+						<p><a href="#">Khoá Tủ Đồ Hune Cabinet 18R01LP</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/4.jpg"></p>
+						<p><a href="#">Khoá Tủ Cabinet Dùng Thẻ 19R01BP</a></p>
+					</div>
+				</div>
+				<div class="khoaVP">
+					<div class="titleKhoa">
+						<h3> KHOÁ VĂN PHÒNG VÀ CĂN HỘ</h3>
+						<a href="#">Xem Thêm</a>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/khoa1.jpg"></p>
+						<p><a href="#">Khóa cửa Hune 918-90031-F</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/khoa2.jpg"></p>
+						<p><a href="#">Khóa cửa vân tay 918-90031-F </a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/khoa3.jpg"></p>
+						<p><a href="#">Khóa cửa vân tay 929SS-F</a></p>
+					</div>
+					<div class="more-article">
+						<p><img loading="lazy" src="img/khoa4.jpg"></p>
+						<p><a href="#">Khóa điện tử thông minh FL1000</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
+	<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="info">
+						<div class="logo">
+							<a href="#"><img src="./img/logo-hune.png" alt="Công ty TNHH datboss" title="Công ty TNHH datboss"></a>
+						</div>
+						<p class="des">
+							Dòng khóa được tin dùng hàng đầu tại Việt Nam
+						</p>
+						<ul class="widget-menu widget-customer">
+							<li class="map_">
+								<i class="fa fa-map-marker color-x" aria-hidden="true"></i>
+								<a class="address_ft" style="font-size: 17px">Mê Linh Hà Nội</a>
+							</li>
+							<li>
+								<i class="fa fa-phone color-x" aria-hidden="true"></i>
+								<a href="#" style="font-size: 17px">0965336806</a>
+							</li>
+							<li>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<a href="#" style="font-size: 17px">ngocduccpit@gmail.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sp">
+						<div class="widget-item">
+							<h4 class="widget-title">Sản phẩm</h4>
+							<ul class="widget-menu">
 
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
+								<li><a href="#">Khóa khách sạn</a></li>
 
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
+								<li><a href="#">Khóa tủ cabinet</a></li>
 
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
+								<li><a href="#">Khóa cho văn phòng/căn hộ</a></li>
 
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
+								<li><a href="#">Công tắc tiết kiệm điện</a></li>
 
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
+								<li><a href="#">Intelligent Safe Box</a></li>
 
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+							</ul>
+						</div>
+					</div>
+					<div class="giaiPhap">
+						<div class="widget-item">
+							<h4 class="widget-title">Giải pháp</h4>
+							<ul class="widget-menu">
+
+								<li><a href="#">Giải pháp cho khách sạn</a></li>
+
+								<li><a href="#">Giải pháp cho văn phòng/căn hộ</a></li>
+
+								<li><a href="#">Giải pháp quản lý nhân sự</a></li>
+
+								<li><a href="#">Giải pháp an ninh</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="dichVu">
+						<div class="widget-item">
+							<h4 class="widget-title">Dịch vụ & Hỗ trợ</h4>
+							<ul class="widget-menu">
+
+								<li><a href="#">Driver & Catalogue</a></li>
+
+								<li><a href="#">Hỏi đáp sản phẩm Hune</a></li>
+
+								<li><a href="#">Chính sách bảo hành</a></li>
+
+								<li><a href="#">Yêu cầu hỗ trợ</a></li>
+
+								<li><a href="#">Đánh giá sản phẩm</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="taiKhoan">
+						<div class="widget-item">
+							<h4 class="widget-title">Tài khoản</h4>
+							<ul class="widget-menu">
+
+								<li><a href="#">Đăng ký</a></li>
+
+								<li><a href="#">Đăng nhập</a></li>
+
+								<li><a href="#">Giỏ hàng</a></li>
+
+								<li><a href="#">Tìm kiếm</a></li>
+
+								<li><a href="#">Tin tức</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	
 </body>
-
 </html>
